@@ -1,0 +1,62 @@
+body {
+
+
+margin:0;
+padding:0;
+
+
+
+}
+
+
+.container {
+  grid-template-columns:100% ;
+  grid-template-rows:auto;
+display:grid;
+
+grid-template-areas:
+
+"headers"
+"mains"
+"footers";
+
+
+
+}
+
+
+header{
+
+grid-area:headers;
+
+}
+
+
+main {
+
+grid-template-columns:100% ;
+grid-template-rows:auto;
+
+grid-area:mains;
+display: grid;
+grid-template-areas:
+"title"
+"r_1"
+"r_2"
+"r_3"
+"r_4"
+"r_5"
+"r_6"
+"r_7"
+"r_8"
+"r_9";
+
+
+}
+
+footer {
+
+grid-area:footers;
+
+
+}
