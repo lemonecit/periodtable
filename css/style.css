@@ -66,3 +66,15 @@ background-color:blue;
 grid-area:titles;
 
 }
+
+
+.r_1 {
+
+display:grid;
+grid-template-columns: repeat(18,1fr);
+grid-template-rows: auto;
+grid-template-areas:
+"table_layout_1 . . . . . . . . . . . . . . . . table_layout_18";
+
+
+}
