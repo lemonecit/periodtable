@@ -41,7 +41,7 @@ grid-area:mains;
 display: grid;
 grid-template-areas:
 "titles"
-"r_1"
+"r_1s"
 "r_2"
 "r_3"
 "r_4"
@@ -69,7 +69,7 @@ grid-area:titles;
 
 
 .r_1 {
-
+grid-area:r_1s;
 display:grid;
 grid-template-columns: repeat(18,1fr);
 grid-template-rows: auto;
