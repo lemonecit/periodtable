@@ -194,15 +194,13 @@ grid-template-areas:
 
 
 .r_9 {
-grid-area:r_9s;
-display:grid;
-grid-template-columns: repeat(18,1fr);
-grid-template-rows: auto;
-grid-template-areas:
-". . table_layout_89s table_layout_90s table_layout_91s table_layout_92s table_layout_93s table_layout_94s table_layout_95s table_layout_96s table_layout_97s table_layout_98s table_layout_99s table_layout_100s table_layout_100s table_layout_101s table_layout_102s table_layout_103s   .  ";
-
-
-
+  bottom: 50px;
+      position: relative;
+      grid-area: r_9s;
+      display: grid;
+      grid-template-columns: repeat(18,1fr);
+      grid-template-rows: auto;
+      grid-template-areas: ". . table_layout_89s table_layout_90s table_layout_91s table_layout_92s table_layout_93s table_layout_94s table_layout_95s table_layout_96s table_layout_97s table_layout_98s table_layout_99s table_layout_100s table_layout_101s table_layout_102s table_layout_103s . ";
 }
 
 
@@ -2646,7 +2644,7 @@ text-align: right;
 
 .period_name {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 11px;
   grid-area: names;
   text-align: center;
 
@@ -2675,4 +2673,47 @@ background-color:#FB5606;
 
 background-color:
   #b655fa;
+}
+
+#font_gas {
+
+color:red;
+
+}
+
+#hydrogen_background {
+
+background-color:#D3C4AD;
+
+}
+
+#alkaline_earth_metals {
+
+background-color:
+    #25a105;
+}
+
+#transition_metals {
+
+background-color:#FCB7E4;
+
+}
+
+#other_metals {
+
+background-color:#0080F8;
+
+}
+
+#metalloids {
+
+background-color: #89E602;
+
+}
+
+
+#nonmetals {
+
+background-color:#F8DE01;
+
 }
