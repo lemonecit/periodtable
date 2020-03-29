@@ -11,7 +11,7 @@ background-color:#343233;
 
 .container {
   margin:0 auto;
-  width:80%;
+  width:85%;
   grid-template-columns:100% ;
   grid-template-rows:auto;
 display:grid;
@@ -97,7 +97,7 @@ display:grid;
 grid-template-columns: repeat(18,1fr);
 grid-template-rows: auto;
 grid-template-areas:
-"table_layout_3s table_layout_4s . . . . . . . . . . table_layout_5s table_layout_6s table_layout_7s table_layout_8s table_layout_9s table_layout_10s";
+"table_layout_3s table_layout_4s . description_text1s description_of_symbols description_text2s description_text2s  . . . . . table_layout_5s table_layout_6s table_layout_7s table_layout_8s table_layout_9s table_layout_10s";
 
 
 }
@@ -205,7 +205,6 @@ grid-template-areas:
 
 
 
-
 .table_layout_1 {
   height:70px;
   border:2px solid black;
@@ -258,6 +257,68 @@ grid-template-areas:
 "table_layout_r4s"
 
 }
+
+
+.description_of_symbol {
+    height:70px;
+  border:2px solid black;
+  border-radius: 10px;
+grid-area:description_of_symbols;
+
+padding: 5px;
+display:grid;
+
+
+grid-template-areas:
+"table_layout_r1s"
+"table_layout_r2s"
+"table_layout_r3s"
+"table_layout_r4s";
+
+}
+
+.description_text1 {
+
+  height:70px;
+
+
+grid-area:description_text1s;
+
+padding: 5px;
+display:grid;
+
+
+grid-template-areas:
+"desc_row1s"
+"desc_row2s"
+"desc_row3s"
+"desc_row4s";
+
+
+}
+
+
+.description_text2 {
+
+  height:70px;
+position:relative;
+right:15px;
+
+grid-area:description_text2s;
+
+padding: 5px;
+display:grid;
+
+
+grid-template-areas:
+"desc_rrow1s"
+"desc_rrow2s"
+"desc_rrow3s"
+"desc_rrow4s";
+
+
+}
+
 
 
 .table_layout_4 {
@@ -2554,8 +2615,134 @@ grid-area:table_layout_r3special;
 }
 
 
+.desc_row1 {
+  position: relative;
+  display: grid;
+  grid-template-areas: "descrip_atomtics fa-long-arrow-lefts";
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 100%;
+  grid-area: desc_row1s;
+  left: 10px;
 
 
+
+
+}
+
+
+.desc_row4 {
+  left: 36px;
+      position: relative;
+      display: grid;
+      grid-template-areas: "descrip_names fa-long-arrow-lefts";
+      grid-template-columns: 60% 28%;
+      grid-template-rows: 100%;
+      grid-area: desc_row4s;
+      top: 13px;
+
+
+
+
+}
+
+
+
+.desc_rrow1 {
+  display:grid;
+  grid-template-areas:
+  "rightarrows descrip_masss";
+grid-template-columns: 20% auto;
+grid-template-rows: 100%;
+grid-area:desc_rrow1s;
+
+
+
+}
+
+.desc_rrow2 {
+  display:grid;
+  grid-template-areas:
+  "rightarrows descrip_symbols";
+grid-template-columns: 20% auto;
+grid-template-rows: 100%;
+grid-area:desc_rrow2s;
+
+
+
+}
+
+.desc_rrow3 {
+  display:grid;
+grid-template-areas:
+"rightarrows descrip_paulings";
+grid-template-columns: 20% auto;
+grid-template-rows: 100%;
+grid-area:desc_rrow3s;
+
+
+
+}
+
+
+
+
+.description_special_r1 {
+  display:grid;
+grid-template-areas:
+"atom_numbers atom_mass_s";
+grid-template-columns: 50% 50%;
+grid-template-rows: 100%;
+grid-area:description_special_r1s;
+
+
+
+}
+
+
+.description_special_r2 {
+  display: grid;
+  grid-template-areas: ". symbols";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  grid-area: table_layout_r2s;
+  text-align: right;
+margin:0;
+padding:0;
+position:relative;
+bottom:9px;
+
+
+
+}
+
+
+.description_special_r3 {
+  right: 2px;
+  bottom: 8px;
+  position: relative;
+  display: grid;
+  grid-template-areas: ". paulings";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-area: table_layout_r3s;
+
+
+
+}
+
+
+.description_special_r4 {
+  position: relative;
+  display: grid;
+  grid-template-areas: "names";
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  grid-area: table_layout_r4s;
+  bottom: 8px;
+
+
+
+}
 
 
 .table_layout_r1 {
@@ -2569,6 +2756,8 @@ grid-area:table_layout_r1s;
 
 }
 
+
+
 .table_layout_r2 {
   display: grid;
   grid-template-areas: ". symbols";
@@ -2579,7 +2768,7 @@ grid-area:table_layout_r1s;
 margin:0;
 padding:0;
 position:relative;
-bottom:10px;
+bottom:9px;
 
 }
 
@@ -2587,7 +2776,7 @@ bottom:10px;
 .table_layout_r3 {
 
   right: 2px;
-  bottom: 14px;
+  bottom: 8px;
   position: relative;
   display: grid;
   grid-template-areas: ". paulings";
@@ -2604,9 +2793,49 @@ bottom:10px;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
   grid-area: table_layout_r4s;
-  bottom: 15px;
+  bottom: 8px;
 
 }
+
+
+.descrip_atomtic {
+color:white;
+  font-weight:bold;
+font-size:15px;
+grid-area:descrip_atomtics;
+
+}
+
+
+.descrip_name {
+color:white;
+  font-weight:bold;
+font-size:15px;
+grid-area:descrip_names;
+
+}
+
+.leftarrow{
+
+  color:white;
+  font-weight:bold;
+font-size:20px;
+grid-area:fa-long-arrow-lefts;
+
+
+}
+
+.rightarrow{
+
+  color:white;
+  font-weight:bold;
+font-size:20px;
+grid-area:rightarrows;
+
+
+}
+
+
 
 .atom_number {
   font-weight:bold;
@@ -2620,6 +2849,31 @@ grid-area:atom_numbers;
   grid-area: atom_mass_s;
   text-align: right;
 
+
+}
+
+.descrip_mass {
+  color:white;
+    font-weight:bold;
+  font-size:15px;
+grid-area:descrip_masss;
+
+}
+
+
+.descrip_symbol {
+  color:white;
+    font-weight:bold;
+  font-size:15px;
+grid-area:descrip_symbols;
+
+}
+
+.descrip_pauling {
+  color:white;
+    font-weight:bold;
+  font-size:15px;
+grid-area:descrip_paulings;
 
 }
 
